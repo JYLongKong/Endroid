@@ -10,13 +10,13 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:gravity="center"
-        android:text="This is OpenMP's log" />
+        android:text="This is Vectorized's log" />
 
     <Button
         android:id="@+id/btn_try"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_gravity="center"
-        android:text="Try OpenMP"
+        android:text="Try Vectorized"
         android:textAllCaps="false" />
 </LinearLayout>

@@ -1,22 +1,22 @@
-package com.lgjy.openmp
+package com.lgjy.vectorized
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.lgjy.openmp.databinding.ActivityOpenmpBinding
+import com.lgjy.vectorized.databinding.ActivityVectorizedBinding
 
 /**
  * Created by LGJY on 2023/2/27.
  * Email：longgangjy@gmail.com
  */
 
-class OpenMPActivity : AppCompatActivity() {
+class VectorizedActivity: AppCompatActivity() {
 
-    private lateinit var binding: ActivityOpenmpBinding
+    private lateinit var binding: ActivityVectorizedBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = ActivityOpenmpBinding.inflate(layoutInflater)
+        binding = ActivityVectorizedBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.btnTry.setOnClickListener {
@@ -29,7 +29,7 @@ class OpenMPActivity : AppCompatActivity() {
     companion object {
 
         init {
-            System.loadLibrary("mpdemo")
+            System.loadLibrary("vectorized")
         }
     }
 }

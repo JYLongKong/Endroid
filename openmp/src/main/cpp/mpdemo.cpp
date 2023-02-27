@@ -7,6 +7,7 @@
 extern "C"
 JNIEXPORT jstring JNICALL
 Java_com_lgjy_openmp_OpenMPActivity_stringFromJNI(JNIEnv *env, jobject thiz) {
+
 #pragma omp parallel
   LOGI("Hello OpenMP");
 
